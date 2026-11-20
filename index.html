@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Totem Experience · Prospection</title>
+<meta name="description" content="Appels d'offres ouverts, marques à approcher et sponsors pour ADICOM Days.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css?v=20261120a">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-in">
+    <img class="logo" src="assets/logo.png" alt="Totem Experience" width="200" height="100">
+    <span class="maj" id="maj"></span>
+  </div>
+  <div class="wrap hero">
+    <p class="eyebrow">Prospection · TX Agency · TX Factory · ADICOM Days</p>
+    <h1>Où gagner les prochains budgets</h1>
+    <p class="lead">Appels d'offres ouverts, marques qui bougent et sponsors à approcher. Chaque ligne renvoie à sa source publique, datée.</p>
+    <div class="kpis" id="kpis"></div>
+  </div>
+  <nav class="tabs wrap" role="tablist">
+    <button class="tab on" data-t="ao" role="tab">Appels d'offres</button>
+    <button class="tab" data-t="marques" role="tab">Marques</button>
+    <button class="tab" data-t="sponsors" role="tab">Sponsors ADICOM</button>
+    <button class="tab" data-t="pitch" role="tab">Pitch</button>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section class="onglet" id="ao">
+    <div class="head"><h2>Appels d'offres ouverts</h2><p>Communication, digital, audiovisuel, sensibilisation et événementiel. Triés par date limite ; les jours restants se recalculent chaque jour.</p></div>
+    <div class="filtres" id="ao-f"></div>
+    <div class="list" id="ao-list"></div>
+  </section>
+
+  <section class="onglet" id="marques" hidden>
+    <div class="head"><h2>Marques à approcher</h2><p>Un lancement, une ouverture, une nomination ou un recrutement rendus publics : le bon moment pour proposer un rendez-vous.</p></div>
+    <div class="list" id="ma-list"></div>
+  </section>
+
+  <section class="onglet" id="sponsors" hidden>
+    <div class="head"><h2>Sponsors pour ADICOM Days</h2><p>Les marques déjà présentes sur une édition passée, puis de nouvelles cibles repérées dans l'actualité. Contact : seulement s'il est publié, sinon « à demander ».</p></div>
+    <div class="filtres" id="sp-f"></div>
+    <div class="grid" id="sp-list"></div>
+    <p class="src" id="sp-src"></p>
+  </section>
+
+  <section class="onglet" id="pitch" hidden>
+    <div class="head"><h2>Pitch d'une page</h2><p>À adapter à chaque marque : remplacer les passages entre crochets avant l'envoi.</p></div>
+    <article class="pitch" id="pitch-doc"></article>
+    <button class="btn" id="copy-pitch">Copier le texte du pitch</button>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <img src="assets/mark.png" alt="" width="28" height="32">
+  <p>Sources publiques relues le <span class="maj-d"></span>. « Ajouter à ClickUp » copie la fiche prête à coller dans une tâche.</p>
+</footer>
+<div class="toast" id="toast" role="status"></div>
+<script src="assets/data.js?v=20261120a"></script>
+<script src="assets/app.js?v=20261120a"></script>
+</body>
+</html>
